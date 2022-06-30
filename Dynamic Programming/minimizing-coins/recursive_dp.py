@@ -13,7 +13,7 @@ def solution(index, total):
 		return 0
 	if total < 0:
 		return inf
-	if dp[index][total] != -1:
+	if dp[index][total] != -1:  
 		return dp[index][total]
 	
 	pick = 1 + solution(index, total - coins[index])
